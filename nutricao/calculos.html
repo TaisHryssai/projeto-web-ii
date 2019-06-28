@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title> VIVA BEM - NUTRIÇÃO</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
+    <link rel="stylesheet" href="assets/resources/css/estilo.css">
+    <link rel="shortcut icon" href="assets/resources/img/iconSaude.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="assets/libraries/jquery/jquery.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="mitos-verdades.html">Mitos & Verdades</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper navbarColor">
+                <a href="home.html" class="brand-logo">VIVA BEM</a>
+                <a href="home.html" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger" href="guia-nutricional.html" data-target="dropdown1">Guia
+                            Nutricional<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="diversos.html" data-target="dropdown2">Diversos<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="contato.html" data-target="dropdown3">Contato<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="guia-nutricional.html">Guia Nutricional</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="diversos.html">Diversos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mitos-verdades.html">Mitos & verdades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+        <li class="divider" tabindex="-1"></li>
+    </ul>
+    <!--Fim Navbar-->
+    <main>
+        <!--Inicio seção-->
+        <section>
+            <h3>IMC</h3>
+            <p>IMC é a sigla para Índice de Massa Corporal que serve para avaliar o peso do indivíduo em relação à sua
+                altura e assim indicar se está dentro do peso ideal, acima ou abaixo do peso desejado. Estar dentro do
+                peso certo é importante porque estar acima ou abaixo peso influencia na saúde, aumentando o risco de
+                doenças como desnutrição quando se está abaixo do peso, e AVC e infarto, quando se está acima do peso.
+                Assim, é comum os médicos, enfermeiros e nutricionistas avaliarem o peso da pessoa nas consultas de
+                rotina para verificar a possibilidade de doenças que a pessoa pode estar pre-disposta.</p>
+            <h5>Como calcular o IMC</h5>
+            <p>O cálculo do IMC deve ser feito usando a seguinte fórmula matemática: Peso ÷ altura x altura. Mas você
+                também pode saber se está dentro do peso ideal utilizando a nossa calculadora online, apenas inserindo
+                seus dados:</p>
+            <div class="row" id="formularioImc">
+                <form class="col s8 calculos">
+                    <div class="row center">
+                        <div class="input-field col s2">
+                            <input id="altura" class="validate" type="text" required="required" name="numbers"
+                                pattern="[0-9]{1},[0-9]+$" onfocus="mudaCor(this)" autofocus placeholder="0,00">
+                            <label>Altura</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input id="peso" type="text" class="validate" onfocus="mudaCor(this)" required="required"
+                                pattern="[0-9]\,+$" placeholder="00,00">
+
+                            <label>Peso</label>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s2">
+                                <p id="imc"></p>    
+                            </div>
+                            <div class="input-field col s2">
+                                <p id="clasPeso"></p>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s2">
+                                    <a class="waves-effect waves-light btn" onclick="calcularImc()">Calcular IMC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--fim da seçao-->
+
+         <!--Inicio seção-->
+        <section>
+            <h5>O que significam os resultados do IMC</h5>
+            <p>Cada resultado do IMC deve ser avaliado por um profissional de saúde. A tabela a seguir indica os
+                possíveis resultados do IMC, de acordo com a Organização Mundial da Saúde, sendo que o IMC entre 18,5 a
+                24,9 representa o peso ideal e o menor risco de algumas doenças.</p>
+            <table>
+                <tr>
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                    <th>O que pode acontecer</th>
+                </tr>
+                <tr>
+                    <td>16 a 16,9 kg/m2</td>
+                    <td>Muito abaixo do peso</td>
+                    <td>Queda de cabelo, infertilidade, ausência menstrual</td>
+                </tr>
+                <tr>
+                    <td>17 a 18,4 kg/m2</td>
+                    <td>Abaixo do peso</td>
+                    <td>Fadiga, stress, ansiedade
+                    </td>
+                </tr>
+                <tr>
+                    <td>18,5 a 24,9 kg/m2</td>
+                    <td>Peso normal</td>
+                    <td>Menor risco de doenças cardíacas e vasculares
+                    </td>
+                </tr>
+                <tr>
+                    <td>25 a 29,9 kg/m2</td>
+                    <td>Acima do peso </td>
+                    <td>Fadiga, má circulação, varizes
+                    </td>
+                </tr>
+                <tr>
+                    <td>30 a 34,9 kg/m2</td>
+                    <td>Obesidade Grau I </td>
+                    <td>Diabetes, angina, infarto, aterosclerose
+                    </td>
+                </tr>
+                <tr>
+                    <td>35 a 40 kg/m2</td>
+                    <td>Obesidade Grau II </td>
+                    <td>Apneia do sono, falta de ar
+                    </td>
+                </tr>
+                <tr>
+                    <td>maior que 40 kg/m2</td>
+                    <td>Obesidade Grau III </td>
+                    <td>Refluxo, dificuldade para se mover, escaras, diabetes, infarto, AVC
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <!--fim da seçao-->
+
+         <!--Inicio seção-->
+        <section>
+            <h5>Porque é importante estar dentro do peso ideal</h5>
+            <p>Quem não estiver dentro do peso ideal deve adequar a alimentação e fazer exercícios para conseguir
+                atingir o peso mais indicado para sua altura e idade. Quando se está abaixo do peso ideal deve-se
+                aumentar o consumo de alimentos ricos em nutrientes para que o corpo tenha o necessário para se proteger
+                de doenças. Já quem está acima do peso ideal deve consumir menos calorias e fazer algum tipo de
+                atividade física para eliminar os estoques de gordura, que aumenta o risco de doenças cardíacas.</p>
+            <p>É importante estar dentro do peso ideal porque o peso certo está intimamente ligado ao estado de saúde da
+                pessoa. Ter um pequeno acumulo de gordura no corpo é importante para que hajam reservas de energia para
+                quando a pessoa ficar doente ter tempo para se recuperar. No entanto, o excesso de gordura se acumula no
+                fígado, na cintura e também dentro das artérias dificultando a passagem do sangue, e isso aumenta o
+                risco de doenças cardíacas.</p>
+            <p>Por isso, estar dentro do peso ideal é importante para aumentar a saúde, prevenindo doenças
+                cardiovasculares e aumentar a qualidade de vida. Assim, quem está abaixo do peso deve aumentar o volume
+                muscular para aumentar de peso de forma saudável e quem está acima do peso, deve queimar gordura para
+                ganhar saúde.</p>
+        </section>
+        <!--fim da seçao-->
+    </main>
+    <footer class="page-footer navbarColor">
+        <div class="container indigo-text text-darken-4">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h6 class="indigo-text text-darken-4">Viva Bem - Nutrição</h6>
+                    <p class="indigo-text text-darken-4 contato">Entre em contato para mais informações</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <a href="contato.html">
+                        <h5 class="indigo-text text-darken-4">Entre em contato</h5>
+                    </a>
+                    <address>
+                        <p class="contato">Telefone (42) 3216 - 5498</p>
+                        <p class="contato"> Endereço: Av. Profa. Laura Pacheco Bastos, 800 - Industrial, Guarapuava -
+                            PR, 85053-525</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container indigo-text text-darken-4">
+                © 2019 Desenvolvimento em Web 2
+                <a class="indigo-text text-darken-4 right" href="http://portal.utfpr.edu.br/">UTFPR</a>
+            </div>
+        </div>
+    </footer>
+    <!--arquivos js-->
+    <script src="assets/resources/js/curiosidadesEimc.js"></script>
+    <script src="assets/resources/js/inicio.js"></script>
+</body>
+</html>

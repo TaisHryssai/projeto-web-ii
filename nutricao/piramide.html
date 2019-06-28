@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title> VIVA BEM - NUTRIÇÃO</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--estilo da página-->
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
+    <link rel="stylesheet" href="assets/resources/css/estilo.css">
+    <link rel="shortcut icon" href="assets/resources/img/iconSaude.png" type="image/x-icon">
+    <!--Jquery e Materialize-->
+    <script src="assets/libraries/jquery/jquery.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="mitos-verdades.html">Mitos & Verdades</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+
+    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper navbarColor">
+                <a href="home.html" class="brand-logo">VIVA BEM</a>
+                <a href="home.html" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="guia-nutricional.html" data-target="dropdown1">Guia
+                            Nutricional<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="diversos.html" data-target="dropdown2">Diversos<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="contato.html" data-target="dropdown3">Contato<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--navbar hamburguer-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="guia-nutricional.html">Guia Nutricional</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="diversos.html">Diversos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mitos-verdades.html">Mitos & verdades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+        <li class="divider" tabindex="-1"></li>
+    </ul>
+    <!--fim navbar-->
+    <main>
+        <div class="row">
+            <section>
+                <h3 id="mostraImg">Pirâmide Alimentar</h3>
+                <p class="left-align center">Quando pensamos em adotar uma alimentação saudável logo nos vem à cabeça o
+                    questionamento de por onde começar. Por isso, conhecer a pirâmide alimentar é uma ótima forma de se
+                    orientar; ela indica quais são os alimentos que possuem os nutrientes essenciais para o nosso dia a
+                    dia,
+                    promovendo a saúde e nos prevenindo de doenças.</p>
+                <img src="assets/resources/img/piramide-alimentar.png" alt="Piramide" id="imgPiramide">
+                <h3>Composição da pirâmide Alimentar</h3>
+                <p>Na base da pirâmide, estão a água e a atividade física. Compondo a maior parte do corpo humano, a
+                    água é
+                    um nutriente essencial para os processos fisiológicos de digestão, absorção e excreção, além das
+                    reações
+                    químicas em geral e manutenção da temperatura corporal. Recomenda-se de acordo com a pirâmide
+                    alimentar,
+                    uma ingestão de aproximadamente dois litros de água por dia, nos intervalos das refeições. A
+                    atividade
+                    física aliada a uma alimentação saudável é de grande importância para melhoria da qualidade de vida
+                    e
+                    manutenção da saúde. Recomenda-se, portanto, no mínimo 150 minutos de atividade física por semana.
+                    Mas
+                    lembre-se! Consulte um profissional capacitado a lhe ajudar. Já os alimentos estão organizados em
+                    quatro
+                    níveis e oito grupos alimentares; são divididos em: energéticos – constituídos pelos carboidratos;
+                    reguladores – constituídos pelas vitaminas, minerais e fibras (frutas, verduras, legumes);
+                    construtores
+                    – constituídos pelas proteínas de origem vegetal e animal; e os energéticos extras – compostos pelos
+                    açúcares e gorduras em geral, que devem ser ingeridos de maneira restrita. Além da água.</p>
+            </section>
+
+            <section>
+                <h3>Grupos Alimentares</h3>
+
+                <p class="grupoalimentar">Cereais, pães e tubérculos</p>
+                <p>É o maior grupo alimentar e compõe a base da pirâmide alimentar, são os nutrientes energéticos. Nele,
+                    encontram-se os alimentos fontes de carboidratos como aveia, pão, arroz, farinhas integrais, batata
+                    doce entre outros. Na pirâmide, o consumo destes é priorizado, pois são as principais fontes de
+                    energia do organismo, com carboidratos complexos (ricos em fibras), vitaminas do complexo B e
+                    fibras.</p>
+                <p class="grupoalimentar">Hortaliças</p>
+                <p>Neste encontram-se as verduras e os legumes. Ao consumi-los seu organismo receberá vitaminas,
+                    minerais e fibras. São essenciais para a regulação de diversas funções metabólicas e funcionamento
+                    adequado do organismo. No entanto, a ingestão inadequada pode levar a estados de carência e a
+                    manifestações clínicas.</p>
+                <p class="grupoalimentar">Frutas</p>
+                <p>Assim como as hortaliças, as frutas são fontes de fibras, vitaminas e minerais essenciais ao
+                    equilíbrio e funcionamento regular do organismo.</p>
+                <p class="grupoalimentar">Leguminosas</p>
+                <p> Neste grupo encontram-se os grãos, como: feijões, lentilha, grão de bico, soja e oleaginosas. Além
+                    do aporte proteico, são boas fontes de fibras. As leguminosas são fontes de proteínas de origem
+                    vegetal.</p>
+                <p class="grupoalimentar">Carnes e ovos</p>
+                <p>Este é o principal grupo fonte de proteínas de origem animal, que é um nutriente essencial para a
+                    formação de tecidos, enzimas e anticorpos. São ricas também em ferro e vitaminas B6 e B12 que têm
+                    efeito preventivo nas anemias. De acordo com a pirâmide, seu consumo deve ser de no máximo duas
+                    vezes ao dia, pois estes alimentos são geralmente ricos em gorduras saturadas e colesterol, por isso
+                    prefira as carnes magras.</p>
+                <p class="grupoalimentar">Leite e derivados</p>
+                <p>Os alimentos deste grupo também fornecem proteínas ao organismo, além de cálcio, nutriente
+                    fundamental para constituição óssea e dentes. O consumo deve ser moderado, pois nos integrais há
+                    presença de gordura saturada e colesterol. Por isso prefira leite e derivados desnatados.</p>
+                <p class="grupoalimentar">Óleos e gorduras</p>
+                <p>São alimentos fonte de energia e são responsáveis pelo transporte de vitaminas do complexo B. Por
+                    serem ricos em calorias, sua ingestão deve ser moderada e equilibrada. É preferível optar pelos
+                    alimentos fontes de gorduras boas como óleo vegetal, azeite de oliva extra virgem, linhaça,
+                    castanhas e amêndoas.</p>
+                <p class="grupoalimentar">Açúcares e doces</p>
+                <p>Este grupo na pirâmide alimentar é composto por açúcar, mel, doces e produtos açucarados como
+                    achocolatados, por exemplo. São carboidratos simples, não tem fibras. São pobres em nutrientes e seu
+                    consumo deve ser esporádico.</p>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="page-footer navbarColor">
+        <div class="container indigo-text text-darken-4">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h6 class="indigo-text text-darken-4">Viva Bem - Nutrição</h6>
+                    <p class="indigo-text text-darken-4 contato">Entre em contato para mais informações</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <a href="contato.html">
+                        <h5 class="indigo-text text-darken-4">Entre em contato</h5>
+                    </a>
+                    <address>
+                        <a href="thryssai@gmail.com" id="footerContato"
+                            class="indigo-text text-darken-4">Email:vivabem@nutricao.com</a>
+                        <p class="contato">Telefone (42) 3216 - 5498</p>
+                        <p class="contato"> Endereço: Av. Profa. Laura Pacheco Bastos, 800 - Industrial, Guarapuava -
+                            PR, 85053-525</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container indigo-text text-darken-4">
+                © 2019 Desenvolvimento em Web 2
+                <a class="indigo-text text-darken-4 right" href="http://portal.utfpr.edu.br/">UTFPR</a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/resources/js/inicio.js"></script>
+</body>
+
+</html>

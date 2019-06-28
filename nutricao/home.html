@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> VIVA BEM - NUTRIÇÃO</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
+    <!--ESTILO DO SITE-->
+    <link rel="stylesheet" href="assets/resources/css/estilo.css">
+    <link rel="shortcut icon" href="assets/resources/img/iconSaude.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="assets/libraries/jquery/jquery.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+</head>
+
+<body onload="mensagem()">
+    <!-- Navbar -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="mitos-verdades.html">Mitos & Verdades</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper navbarColor">
+                <a href="home.html" class="brand-logo">VIVA BEM</a>
+                <a href="home.html" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="guia-nutricional.html" data-target="dropdown1">Guia
+                            Nutricional<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="diversos.html" data-target="dropdown2">Diversos<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="contato.html" data-target="dropdown3">Contato<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--navbar hamburguer-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="guia-nutricional.html">Guia Nutricional</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="diversos.html">Diversos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mitos-verdades.html">Mitos & verdades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+        <li class="divider" tabindex="-1"></li>
+    </ul>
+    <!--Fim Navbar-->
+    <main>
+        <!--carrossel -->
+        <div class="carousel">
+            <a class="carousel-item" href="calculos.html"><img src="assets/resources/img/imc.png" alt="imc"></a>
+            <a class="carousel-item" href="piramide.html"><img src="assets/resources/img/piramide-alimentar.png"
+                    alt="piramide"></a>
+            <a class="carousel-item" href="dicas.html"><img src="assets/resources/img/dicas.jpeg" alt="dicas"></a>
+            <a class="carousel-item" href="mitosVerdades.html"><img src="assets/resources/img/verdade.png"
+                    alt="verdadeOUmetira"></a>
+            <a class="carousel-item" href="receitas.html"><img src="assets/resources/img/receitas.jpg"
+                    alt="receitas"></a>
+            <a class="carousel-item" href="curiosidade.html"><img src="assets/resources/img/curiosidades.png"
+                    alt="curiosidades"></a>
+        </div>
+
+        <div class="row">
+            <!--seção inicio-->
+            <section>
+                <h3>Seja Bem-Vindo</h3>
+                <p class="left-align center">Aqui você encontrará uma grande variedade de conteúdos, irá poder conferir
+                    algumas receitas saudáveis que pode testar no seu dia a dia, conferir alguns mitos e verdades de
+                    alguns
+                    alimentos que tem dúvida. Pode também realizar alguns cálculos como verificar seu IMC, para conferir
+                    o
+                    seu indice corporal, verificar algumas dicas que pode ajudar no seu cotidiano, e demais novidades.
+                </p>
+            </section>
+        </div>
+        <!--cards com informações-->
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card green lighten-2">
+                    <div class="card-content white-text">
+                        <span class="card-title ">Pirâmide Alimentar</span>
+                        <p>Veja como funciona a pirâmide alimentar.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="piramide.html" class="indigo-text text-darken-4">Pirâmide Alimentar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card green lighten-2">
+                    <div class="card-content white-text">
+                        <span class="card-title">Dicas Nutricionais</span>
+                        <p>Confira algumas dicas que separamos para você.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="dicas.html" class="indigo-text text-darken-4">Dicas Nutricionais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card green lighten-2">
+                    <div class="card-content white-text">
+                        <span class="card-title">Cálculos</span>
+                        <p>Calcule seu IMC e confira o se está no peso ideal.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="calculos.html" class="indigo-text text-darken-4">Cálculos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card green lighten-2">
+                    <div class="card-content white-text">
+                        <span class="card-title">Mitos & Verdades</span>
+                        <p>Confira o que é mito e o que é verdade na sua alimentação.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="mitosVerdades.html" class="indigo-text text-darken-4">Mitos & verdades</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card green lighten-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Receitas</span>
+                            <p>Confira algumas receitas saúdaveis que separamos pra você.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="receitas.html" class="indigo-text text-darken-4">Receitas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card green lighten-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Curiosidades</span>
+                            <p>Separamos algumas curiosidade para você conferir.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="curiosidade.html" class="indigo-text text-darken-4">Curiosidades</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card green lighten-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Contato</span>
+                            <p>Quer mandar sua opinião ou dúvida pra gente, só entrar em contato com a gente.
+
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="contato.html" class="indigo-text text-darken-4">Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card green lighten-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Depoimentos</span>
+                            <p>Confira alguns depoimentos, e deixe o seu se preferir.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="mural.html" class="indigo-text text-darken-4">Depoimentos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fim dos cards-->
+    </main>
+
+    <footer class="page-footer navbarColor">
+        <div class="container indigo-text text-darken-4">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h6 class="indigo-text text-darken-4">Viva Bem - Nutrição</h6>
+                    <p class="indigo-text text-darken-4 contato">Entre em contato para mais informações</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="indigo-text text-darken-4">Entre em contato</h5>
+                    <address>
+                        <p class="contato">Telefone (42) 3216 - 5498</p>
+                        <p class="contato"> Endereço: Av. Profa. Laura Pacheco Bastos, 800 - Industrial, Guarapuava -
+                            PR, 85053-525</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container indigo-text text-darken-4">
+                © 2019 Desenvolvimento em Web 2
+                <a class="indigo-text text-darken-4 right" href="http://portal.utfpr.edu.br/">UTFPR</a>
+            </div>
+        </div>
+    </footer>
+    <!--arquivos js-->
+    <script src="assets/resources/js/inicio.js"></script>
+</body>
+</html>

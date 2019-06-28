@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> VIVA BEM - NUTRIÇÃO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--estilo da pagina-->
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
+    <link rel="stylesheet" href="assets/resources/css/estilo.css">
+    <link rel="shortcut icon" href="assets/resources/img/iconSaude.png" type="image/x-icon">
+    <!--Jquery e Materialize-->
+    <script src="assets/libraries/jquery/jquery.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+        <ul id="dropdown1" class="dropdown-content">
+                <li><a href="calculos.html">Cálculos</a></li>
+                <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+                <li class="divider"></li>
+                <li><a href="dicas.html">Dicas Nutricionais</a></li>
+            </ul>
+            <ul id="dropdown2" class="dropdown-content">
+                <li><a href="mitos-verdades.html">Mitos & Verdades</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li class="divider"></li>
+                <li><a href="curiosidade.html">Curiosidades</a></li>
+            </ul>
+            <ul id="dropdown3" class="dropdown-content">
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="mural.html">Depoimentos</a></li>
+            </ul>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper navbarColor">
+                        <a href="home.html" class="brand-logo">VIVA BEM</a>
+                        <a href="home.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a class="dropdown-trigger" href="guia-nutricional.html" data-target="dropdown1">Guia Nutricional<i class="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a class="dropdown-trigger" href="diversos.html" data-target="dropdown2">Diversos<i class="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a class="dropdown-trigger" href="contato.html" data-target="dropdown3">Contato<i class="material-icons right">arrow_drop_down</i></a></li>
+        
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!--navbar hamburguer-->
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="guia-nutricional.html">Guia Nutricional</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="calculos.html">Cálculos</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="dicas.html">Dicas Nutricionais</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="diversos.html">Diversos</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="mitos-verdades.html">Mitos & verdades</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="curiosidade.html">Curiosidades</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="mural.html">Depoimentos</a></li>
+                <li class="divider" tabindex="-1"></li>
+            </ul>
+            <!--Fim Navbar-->
+    <main>
+        <h3>Confira nesta seção diversas curiosidades nutricionais.</h3>
+        <h4 id="curiosidade_pressao"> <i class="material-icons">check</i>Batata roxa ajuda a reduzir a pressão arterial.</h4>
+        <p class="imagensCuriosidade"><img class="materialboxed" data-caption="Batata roxa reduz a pressão arterial" width="400" src="assets/resources/img/batataRoxa.jpg" alt="batata-doce"></p>
+        <p id="muda_pressao"></p>
+        <h4 id="curiosidade_vitamina"> <i class="material-icons">check</i>Vitamina C: nova arma contra o Alzheimer.</h4>
+        <p class="imagensCuriosidade"><img class="materialboxed" data-caption="" width="400" src="assets/resources/img/vitamina_c.png" alt="vitamina-c"></p>
+        <p id="muda_vitamina"></p>
+        <h4 id="curiosidade_enxaqueca"> <i class="material-icons">check</i>Enxaqueca sob controle.</h4>
+        <p class="imagensCuriosidade"><img class="materialboxed" width="400" src="assets/resources/img/enxaqueca.png" alt="remedio-enxaqueca"></p>
+        <p id="muda_enxaqueca"></p>
+        <h4 id="curiosidade_vinho"> <i class="material-icons">check</i>Vinho tinto protege contra doenças oculares.</h4>
+        <p class="imagensCuriosidade"><img class="materialboxed" width="400" src="assets/resources/img/vinho.jpg" alt="vinho"></p>
+        <p id="muda_vinho"></p>
+        <h4 id="curiosidade_broto"> <i class="material-icons">check</i>O broto rejuvenesce, dá músculo e energia.</h4>
+        <p class="imagensCuriosidade"><img class="materialboxed" width="400" src="assets/resources/img/broto.jpg" alt="brotos"></p>
+        <p id="muda_broto"></p>
+        <h4 id="curiosidade_concentracao"> <i class="material-icons">check</i> Vitamina B12 melhora a concentração</h4>
+        <p class="imagensCuriosidade"><img class="materialboxed" width="400" src="assets/resources/img/vitamina_b12.jpg" alt="vitamina-b12"></p>
+        <p id="muda_concentracao"></p>
+        <h4 id="curiosidade_mente"> <i class="material-icons">check</i>Chás para fortalecer a mente</h4>
+        <p class="imagensCuriosidade"><img class="materialboxed" width="400" src="assets/resources/img/chas.png" alt="chas"></p>
+        <p id="muda_mente"></p>
+        <h4 id="curiosidade_coracao"> <i class="material-icons">check</i> Cogumelos fazem bem para o coração.</h4>
+        <p class="imagensCuriosidade"><img class="materialboxed" width="400" src="assets/resources/img/cogumelos.png" alt="cogumenlos"></p>
+        <p id="muda_coracao"></p>
+    </main>
+
+    <footer class="page-footer navbarColor">
+        <div class="container indigo-text text-darken-4">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h6 class="indigo-text text-darken-4">Viva Bem - Nutrição</h6>
+                    <p class="indigo-text text-darken-4 contato">Entre em contato para mais informações</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <a href="contato.html">
+                        <h5 class="indigo-text text-darken-4">Entre em contato</h5>
+                    </a>
+                    <address>
+                        <p class="contato">Telefone (42) 3216 - 5498</p>
+                        <p class="contato"> Endereço: Av. Profa. Laura Pacheco Bastos, 800 - Industrial, Guarapuava - PR, 85053-525</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container indigo-text text-darken-4">
+                © 2019 Desenvolvimento em Web 2
+                <a class="indigo-text text-darken-4 right" href="http://portal.utfpr.edu.br/">UTFPR</a>
+            </div>
+        </div>
+    </footer>
+    <!--arquivos js-->
+    <script src="assets/resources/js/curiosidadesEimc.js"></script>
+    <script src="assets/resources/js/inicio.js"></script>
+</body>
+
+</html>

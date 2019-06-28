@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title> VIVA BEM - NUTRIÇÃO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--estilo da página-->
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
+    <link rel="stylesheet" href="assets/resources/css/estilo.css">
+    <link rel="shortcut icon" href="assets/resources/img/iconSaude.png" type="image/x-icon">
+    <!--Jquery e Materialize-->
+    <script src="assets/libraries/jquery/jquery.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+</head>
+
+<body onload="receitas()">
+    <!-- Navbar  -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="mitos-verdades.html">Mitos & Verdades</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+
+    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper navbarColor">
+                <a href="home.html" class="brand-logo">VIVA BEM</a>
+                <a href="home.html" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="guia-nutricional.html" data-target="dropdown1">Guia
+                            Nutricional<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="diversos.html" data-target="dropdown2">Diversos<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="contato.html" data-target="dropdown3">Contato<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--navbar hamburguer-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="guia-nutricional.html">Guia Nutricional</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="diversos.html">Diversos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mitos-verdades.html">Mitos & verdades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+        <li class="divider" tabindex="-1"></li>
+    </ul>
+    <!--Fim Navbar-->
+    <main>
+        <h3>Receitas saudáveis para provar</h3>
+        <!--inicio seção-->
+        <section>
+            <h4>Receitas Salgadas Saudáveis</h4>
+            <div id="flip">TALHARIM DE ABOBRINHA</div>
+            <div id="ingredientes">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita"> 1 abobrinha</p>
+                <p class="textReceita">água</p>
+            </div>
+            <div id="modo">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita"> Corte de comprido a abobrinha em fatias finas (o máximo que conseguir), depois
+                    corte
+                    as fatias em tirinhas, formando assim o talharim! Coloque a abobrinha na frigideira com bem
+                    pouquinha
+                    água (vai varias do tamanho na abobrinha, da potencia do seu fogo… por isso não tem uma quantidade
+                    específica, comece colocando cerca de 1/2 copo), vá mexendo com cuidado para não quebrar a abobrinha
+                    té
+                    que ela amoleça.</p>
+            </div>
+
+            <div id="flipL">LASANHA DE FRANGO</div>
+            <div id="lasanha">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita"> 1kg de peito de frango</p>
+                <p class="textReceita">1 cebola picada</p>
+                <p class="textReceita">1 dente de alho</p>
+                <p class="textReceita"> 2 tomates picados</p>
+                <p class="textReceita">4 colheres de molho de tomate</p>
+                <p class="textReceita">sal e pimenta a gosto</p>
+                <p class="textReceita">manjericão freco picado a gosto</p>
+                <p class="textReceita">massa de lasanha integral</p>
+            </div>
+            <div id="modoL">
+                <p class="textReceita"> Recheio de frango: </p>
+                <p class="textReceita">cozinhe o frango na panela de pressão, coberto com água, por cerca de 15 minutos
+                    após
+                    pegar pressão. Retire da panela, deixe esfriar e desfie a seguir</p>
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">Em outra panela, refogue a cebola, o alho e o tomate até murchar. Acrescente o
+                    frango, mexendo bem</p>
+                <p class="textReceita">Adicione o molho de tomate e tempere a gosto com o sal e a pimenta-do-reino e
+                    finalize com o manjericão</p>
+                <p class="textReceita">Para a lasanha: em um refratário, coloque uma camada do molho branco, seguida de
+                    outra camada da massa de lasanha</p>
+                <p class="textReceita">Leve para assar em forno pré-aquecido a 200º por cerca de 40 minutos.</p>
+            </div>
+
+            <div id="flipQ">QUIBE RECHEADO</div>
+            <div id="quibe">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita"> 500g de trigo para quibe</p>
+                <p class="textReceita">1Kg de carne moída</p>
+                <p class="textReceita">1 cebola</p>
+                <p class="textReceita"> 2 dentes de alho</p>
+                <p class="textReceita">1 berinjela grande cortada em cubos</p>
+                <p class="textReceita">50g de amêndoas laminadas</p>
+                <p class="textReceita">Hortelã a gosto</p>
+                <p class="textReceita">pimenta do reino a gosto</p>
+                <p class="textReceita">limão</p>
+                <p class="textReceita">azeite extra virgem</p>
+            </div>
+            <div id="modoQ">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">Deixe o trigo de molho por 1 hora em água, em seguida, escorra a água e tempere
+                    com
+                    sal, pimenta do reino, hortelã e reserve</p>
+                <p class="textReceita">Em uma panela, aqueça o azeite e refogue a cebola e o alho. Adicione a berinjela
+                    e
+                    cozinhe até ficar macia, quase desmanchando. Tempere com o sal, pimenta e hortelã</p>
+                <p class="textReceita">Coloque as amêndoas laminadas em uma frigideira, até dourar. Reserve</p>
+                <p class="textReceita">Em um recipiente, tempere a carne moída e misture com o trigo. Coloque metade
+                    dessa
+                    mistura em uma refratário untado, apertando para unir bem</p>
+                <p class="textReceita">Espalhe a berinjela e coloque o restante da mistura. Coloque um pouco de manteiga
+                    e
+                    leve ao forno pré-aquecido, até a carne ficar assada e o quibe estiver dourado</p>
+                <p class="textReceita"> Sirva com as amêndoas laminadas.</p>
+            </div>
+
+        </section>
+        <!--fim seção-->
+
+        <!--inicio seção-->
+        <section>
+            <h4>Receitas de Lanches</h4>
+            <div id="flipT">TORTA DE COUVE-FLOR COM FRANGO</div>
+            <div id="torta">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita">200g de frango cozido e desfiado</p>
+                <p class="textReceita"> 400g de couve-flor cozida</p>
+                <p class="textReceita">6 ovos</p>
+                <p class="textReceita">3 col. sopa de azeite extra virgem orgânico</p>
+                <p class="textReceita"> 3 col. sopa de aveia em flocos</p>
+                <p class="textReceita">1 Cebola</p>
+                <p class="textReceita"> 2 Tomates picados</p>
+                <p class="textReceita"> Sal rosa a gosto</p>
+                <p class="textReceita">Cúrcuma a gosto</p>
+                <p class="textReceita">Salsinha a gosto/p>
+            </div>
+            <div id="modoT">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">Para o recheio bata o frango no processador até ficar bem triturado</p>
+                <p class="textReceita">Refogue a cebola, alho e acrescente o frango desfiado, os tomates, a salsinha a
+                    cúrcuma e outros temperos de sua preferência para refogar</p>
+                <p class="textReceita">Para o preparo da massa junte no liquidificador a couve-flor, ovos, o azeite, a
+                    aveia
+                    em flocos, sal e temperos, batendo bem um de cada vez</p>
+                <p class="textReceita">Coloque na forma a massa + recheio + massa + orégano por cima e asse por 30
+                    minutos a
+                    180º C</p>
+            </div>
+            <div id="flipC">COOKIE LOW CARB</div>
+            <div id="cookie">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita"> 500g de trigo para quibe</p>
+                <p class="textReceita">1Kg de carne moída</p>
+                <p class="textReceita">1 cebola</p>
+                <p class="textReceita"> 2 dentes de alho</p>
+                <p class="textReceita">1 berinjela grande cortada em cubos</p>
+                <p class="textReceita">50g de amêndoas laminadas</p>
+                <p class="textReceita">Hortelã a gosto</p>
+                <p class="textReceita">pimenta do reino a gosto</p>
+                <p class="textReceita">limão</p>
+                <p class="textReceita">azeite extra virgem</p>
+            </div>
+            <div id="modoC">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">Deixe o trigo de molho por 1 hora em água, em seguida, escorra a água e tempere
+                    com
+                    sal, pimenta do reino, hortelã e reserve</p>
+                <p class="textReceita">Em uma panela, aqueça o azeite e refogue a cebola e o alho. Adicione a berinjela
+                    e
+                    cozinhe até ficar macia, quase desmanchando. Tempere com o sal, pimenta e hortelã</p>
+                <p class="textReceita">Coloque as amêndoas laminadas em uma frigideira, até dourar. Reserve</p>
+                <p class="textReceita">Em um recipiente, tempere a carne moída e misture com o trigo. Coloque metade
+                    dessa
+                    mistura em uma refratário untado, apertando para unir bem</p>
+                <p class="textReceita">Espalhe a berinjela e coloque o restante da mistura. Coloque um pouco de manteiga
+                    e
+                    leve ao forno pré-aquecido, até a carne ficar assada e o quibe estiver dourado</p>
+                <p class="textReceita"> Sirva com as amêndoas laminadas.</p>
+            </div>
+            <div id="flipB">BANANA BREAD VEGANO</div>
+            <div id="banana">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita"> 500g de trigo para quibe</p>
+                <p class="textReceita">1Kg de carne moída</p>
+                <p class="textReceita">1 cebola</p>
+                <p class="textReceita"> 2 dentes de alho</p>
+                <p class="textReceita">1 berinjela grande cortada em cubos</p>
+                <p class="textReceita">50g de amêndoas laminadas</p>
+                <p class="textReceita">Hortelã a gosto</p>
+                <p class="textReceita">pimenta do reino a gosto</p>
+                <p class="textReceita">limão</p>
+                <p class="textReceita">azeite extra virgem</p>
+            </div>
+            <div id="modoB">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">Deixe o trigo de molho por 1 hora em água, em seguida, escorra a água e tempere
+                    com
+                    sal, pimenta do reino, hortelã e reserve</p>
+                <p class="textReceita">Em uma panela, aqueça o azeite e refogue a cebola e o alho. Adicione a berinjela
+                    e
+                    cozinhe até ficar macia, quase desmanchando. Tempere com o sal, pimenta e hortelã</p>
+                <p class="textReceita">Coloque as amêndoas laminadas em uma frigideira, até dourar. Reserve</p>
+                <p class="textReceita">Em um recipiente, tempere a carne moída e misture com o trigo. Coloque metade
+                    dessa
+                    mistura em uma refratário untado, apertando para unir bem</p>
+                <p class="textReceita">Espalhe a berinjela e coloque o restante da mistura. Coloque um pouco de manteiga
+                    e
+                    leve ao forno pré-aquecido, até a carne ficar assada e o quibe estiver dourado</p>
+                <p class="textReceita"> Sirva com as amêndoas laminadas.</p>
+            </div>
+
+        </section>
+        <!--fim seção-->
+
+        <!--inicio seção-->
+        <section>
+            <h4>Receitas de Doces</h4>
+            <div id="flipA">CREME DE ABACAXI</div>
+            <div id="abacaxi">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita">1 abacaxi grande (descascado e cortado em cubos)</p>
+                <p class="textReceita">2 potes de iogurte natural desnatado</p>
+                <p class="textReceita">1 xícara (chá) de leite de coco (ou outro leite vegetal)</p>
+                <p class="textReceita">2 colheres (sopa) de amido de milho</p>
+                <p class="textReceita">1 berinjela grande cortada em cubos</p>
+                <p class="textReceita">1 pacote de gelatina sem sabor</p>
+                <p class="textReceita">Mel (opcional)</p>
+            </div>
+            <div id="modoA">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">Coloque o abacaxi em uma panela e cozinhe por 20 minutos. Deixe esfriar e reserve
+                    na
+                    geladeira. Se desejar incluir mel na receita, misture no abacaxi cozido após retirar do fogo</p>
+                <p class="textReceita">Após isso, prepare a gelatina sem sabor como está indicado na embalagem. Dissolva
+                    o
+                    amido de milho no leite de coco</p>
+                <p class="textReceita">Bata no liquidificador até ficar bem cremoso, o iogurte, metade do abacaxi
+                    cortado e
+                    cozido, a gelatina e o amido de milho dissolvido com leite</p>
+                <p class="textReceita">Em uma travessa, despeje o creme batido e adicione o adoçante e a outra metade do
+                    abacaxi cortado e assado e misture</p>
+                <p class="textReceita">Deixe na geladeira até que fique firme e gelado</p>
+            </div>
+            <div id="flipBC">BROWNIE DE CHOCOLATE</div>
+            <div id="brownie">
+                <p class="textReceita">Óleo de coco e farinha de trigo integral extra, para untar</p>
+                <p class="textReceita">1 ½ xícaras (chá) farinha de trigo integral</p>
+                <p class="textReceita">½ xícara (chá) farinha de aveia</p>
+                <p class="textReceita">3 colheres (chá) de fermento químico em pó</p>
+                <p class="textReceita"> ½ xícara (chá) macadâmia tostada e picada grosseiramente</p>
+                <p class="textReceita">½ xícara (chá) nibs de cacau</p>
+                <p class="textReceita">3 unidades de ovos</p>
+                <p class="textReceita">1 ½ xícara (chá) de açúcar mascavo</p>
+                <p class="textReceita">150g de chocolate amargo ou meio amargo</p>
+                <p class="textReceita"> 200 g de óleo de coco gelado (pedaços)</p>
+            </div>
+            <div id="modoBC">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">Pré aqueça o forno à 180ºC</p>
+                <p class="textReceita">Unte uma forma redonda com óleo de coco e farinha de trigo integral. Retire o
+                    excesso
+                    de farinha. Reserve</p>
+                <p class="textReceita">Em uma vasilha, peneire a farinha de trigo integral, a farinha de aveia e o
+                    fermento
+                    químico</p>
+                <p class="textReceita">Umedeça rapidamente, seque, e coloque as macadâmias na mistura de farinhas.
+                    Acrescente os nibs de cacau, misture bem. Reserve</p>
+                <p class="textReceita">Em uma batedeira, acrescente os ovos e o açúcar e bata até a mistura dobrar de
+                    volume. Reserve</p>
+                <p class="textReceita"> Derreta o chocolate (no micro-ondas ou sobre banho maria). Acrescente o óleo de
+                    coco
+                    e misture. Com a batedeira em movimento, uma o chocolate derretido à mistura de ovos. Desligue a
+                    batedeira e delicadamente incorpore a mistura de farinhas, macadâmia e nibs</p>
+                <p class="textReceita">Leve ao forno por aproximadamente 20 a 25 minutos (o brownie deve ficar úmido,
+                    com
+                    aparência de estar ligeiramente cru)</p>
+                <p class="textReceita">Aguarde esfriar antes de desinformar. </p>
+            </div>
+            <div id="flipTL">TORTA DE LIMÃO</div>
+            <div id="limao">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita">Para Massa: </p>
+                <p class="textReceita">Amêndoa triturada ou farinha de amêndoas</p>
+                <p class="textReceita">Óleo de coco (até dar liga)</p>
+                <p class="textReceita">1 colher de sopa de açúcar de coco</p>
+                <p class="textReceita">Para o Recheio: </p>
+                <p class="textReceita">1 xícara de leite de coco em pó</p>
+                <p class="textReceita">1 copo pequeno de creme de soja</p>
+                <p class="textReceita">3 colheres de sobremesa de açúcar demerara</p>
+                <p class="textReceita">Suco de 2 limões</p>
+                <p class="textReceita">Pó para gelatina sem sabor e incolor</p>
+            </div>
+            <div id="modoTL">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">Faça a massa da torta misturando a amêndoa triturada, o óleo de coco e o açúcar
+                    de
+                    coco</p>
+                <p class="textReceita">Coloque em forminhas pequenas ou em uma forma grande</p>
+                <p class="textReceita">Leve ao forno por 15 minutos e reserve</p>
+                <p class="textReceita">Para o recheio, misture o leite de coco, o creme de soja e o açúcar demerara,
+                    bata
+                    tudo no liquidificador</p>
+                <p class="textReceita">Acrescente a gelatina e bata novamente</p>
+                <p class="textReceita">Leve à geladeira por aproximadamente 4 horas.</p>
+            </div>
+        </section>
+        <!--fim seção-->
+
+        <!--inicio seção-->
+        <section>
+            <h4>Receitas de Bolos</h4>
+            <div id="flipCoco">BOLO DE COCO</div>
+            <div id="coco">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita">1 xícara de farinha de coco</p>
+                <p class="textReceita">3 ovos inteiros</p>
+                <p class="textReceita">2 colheres de chia</p>
+                <p class="textReceita">2 colheres de sopa de cacau em pó</p>
+                <p class="textReceita">1 colher de café de fermento em pó</p>
+                <p class="textReceita">6 colheres de sopa de óleo de coco</p>
+                <p class="textReceita">200 ml de leite de amêndoas</p>
+                <p class="textReceita">Stévia a gosto (pode usar qualquer adoçante de sua preferência)</p>
+            </div>
+            <div id="modoCoco">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">Pré aqueça o forno a 220°</p>
+                <p class="textReceita">Em um recipiente adicione primeiro os ingredientes secos, misture e reserve</p>
+                <p class="textReceita">Em um outro recipiente, acrescente os ingredientes líquidos e misture</p>
+                <p class="textReceita">Junte todos os ingredientes em uma vasilha e bata até virar uma massa homogênea
+                </p>
+                <p class="textReceita">Unte a forma (preferencialmente com o óleo de coco e a farinha de coco ou
+                    amêndoas)
+                </p>
+                <p class="textReceita">Leve ao forno e deixe de 30 a 40 minutos, ou até assar e dourar</p>
+                <p class="textReceita">DICA: </p>
+                <p class="textReceita">A farinha de coco pode ser substituída por outro tipo de farinha, como farinha de
+                    amêndoas, linhaça ou de aveia. Pode ser acrescentado a cobertura ou não, e o leite de amêndoas, pode
+                    ser
+                    substituído por qualquer outro tipo de leite vegetal (leite de soja, de nozes, de coco).</p>
+            </div>
+            <div id="flipBM">BOLO DE MILHO CREMOSO</div>
+            <div id="milho">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita">2 xícaras (chá) de milho verde</p>
+                <p class="textReceita">1 xícara (chá de leite de coco</p>
+                <p class="textReceita">1 colher (sopa) de manteiga ghee</p>
+                <p class="textReceita">⅔ de xícara (chá) açúcar de coco</p>
+                <p class="textReceita">2 ovos</p>
+                <p class="textReceita">¼ de xícara (chá) de farinha de linhaça</p>
+                <p class="textReceita">1 colher (sopa) de fermento em pó</p>
+            </div>
+            <div id="modoBM">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">No liquidificador, bata o milho com o leite de coco, o açúcar de coco e a
+                    manteiga
+                    ghee, até obter uma mistura bem homogênea. Adicione os ovos e bata mais um pouco</p>
+                <p class="textReceita"> Em seguida, adicione farinha de linhaça e o fermento, batendo mais uma vez</p>
+                <p class="textReceita">Coloque a massa em um refratário já untado e leve ao forno pré-aquecido a 180ºC,
+                    asse
+                    por aproximadamente 45 minutos ou até começar a dourar.</p>
+            </div>
+            <div id="flipBA">BOLO DE BANANA COM AVEIA</div>
+            <div id="aveia">
+                <p class="textReceita">Ingredientes:</p>
+                <p class="textReceita">1 ½ xícara (chá) de açúcar mascavo</p>
+                <p class="textReceita"> ½ xícara (chá) de farelo de aveia</p>
+                <p class="textReceita">2 ½ xícara (chá) de aveia em flocos finos</p>
+                <p class="textReceita"> ½ xícara (chá) de castanhas-do-Pará</p>
+                <p class="textReceita"> ½ xícara de uva passa</p>
+                <p class="textReceita">1 colher (sopa) de fermento em pó</p>
+                <p class="textReceita">3 ovos</p>
+                <p class="textReceita">½ xícara (chá) de óleo</p>
+                <p class="textReceita">4 bananas nanicas não muito maduras</p>
+            </div>
+            <div id="modoBA">
+                <p class="textReceita">Modo de Preparo: </p>
+                <p class="textReceita">Em uma vasilha, misture o açúcar mascavo, o farelo de aveia, a aveia em flocos
+                    finos,
+                    a castanha, a uva passa e o fermento, e reserve</p>
+                <p class="textReceita">Bata no liquidificador os ovos, o óleo e as bananas por aproximadamente 4
+                    minutos.
+                    Despeje sobre os ingredientes secos e mexa delicadamente no sentido horário, até formar uma massa
+                    fofa
+                </p>
+                <p class="textReceita">Coloque numa forma de buraco, untada e polvilhada com canela e açúcar mascavo e
+                    asse
+                    em forno médio por aproximadamente 40 minutos.</p>
+            </div>
+        </section>
+        <!--fim seção-->
+
+    </main>
+    <footer class="page-footer navbarColor">
+        <div class="container indigo-text text-darken-4">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h6 class="indigo-text text-darken-4">Viva Bem - Nutrição</h6>
+                    <p class="indigo-text text-darken-4 contato">Entre em contato para mais informações</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <a href="contato.html">
+                        <h5 class="indigo-text text-darken-4">Entre em contato</h5>
+                    </a>
+                    <address>
+                        <p class="contato">Telefone (42) 3216 - 5498</p>
+                        <p class="contato"> Endereço: Av. Profa. Laura Pacheco Bastos, 800 - Industrial, Guarapuava -
+                            PR, 85053-525</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container indigo-text text-darken-4">
+                © 2019 Desenvolvimento em Web 2
+                <a class="indigo-text text-darken-4 right" href="http://portal.utfpr.edu.br/">UTFPR</a>
+            </div>
+        </div>
+    </footer>
+    <!--arquivos js-->
+    <script src="assets/resources/js/dicasReceitas.js"></script>
+    <script src="assets/resources/js/inicio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> VIVA BEM - NUTRIÇÃO</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--ESTILO DO SITE-->
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
+    <link rel="stylesheet" href="assets/resources/css/estilo.css">
+    <link rel="shortcut icon" href="assets/resources/img/iconSaude.png" type="image/x-icon">
+
+    <!--Jquery e Materialize-->
+    <script src="assets/libraries/jquery/jquery.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+    <!--Mascara Jquery-->
+    <script src="assets/libraries/jquery/jquery.mask.js"></script>
+    <script src="assets/libraries/jquery/jquery.mask.min.js"></script>
+    <style>
+        input:invalid {
+            border: 1px solid red;
+        }
+
+        input:valid {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="mitos-verdades.html">Mitos & Verdades</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper navbarColor">
+                <a href="home.html" class="brand-logo">VIVA BEM</a>
+                <a href="home.html" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="guia-nutricional.html" data-target="dropdown1">Guia
+                            Nutricional<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="diversos.html" data-target="dropdown2">Diversos<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="contato.html" data-target="dropdown3">Contato<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--MENU HAMBURGUER-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="guia-nutricional.html">Guia Nutricional</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="diversos.html">Diversos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mitos-verdades.html">Mitos & verdades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+        <li class="divider" tabindex="-1"></li>
+    </ul>
+    <!--Fim Navbar-->
+    <!--INICIO DO CONTEÚDO-->
+    <main>
+
+        <div id="contato">
+            <section>
+                <h4 id="fontCont">CONTATO</h4>
+                <div class="row">
+                    <!--FORMULARIO DE CONTATO-->
+                    <form onsubmit="alert('Enviado com sucesso')" class="col s12" name="form" action="http://localhost:3000/process_post"  method = "POST">
+                        <div class="row">
+                            <div class="input-field col s10">
+                                <input id="nome" type="text" class="validate" name="nomeCompleto"
+                                pattern="^[A-ZÀ-Ú]{1}[a-zà-ú]*\s(([A-ZÀ-Ú]{1}|[a-z]{2}|[A-Za-u]{1}\'[a-zà-ú]*|[A-ZÀ-Ú]{1}[a-zà-ú]*)\s?)+$" autofocus required>
+                                <label>Nome Completo: </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="email" type="email" name="email" class="validate" required
+                                    pattern="^[a-z|A-Z|0-9_.-]+@[a-z|A-Z]+.[a-z|A-Z-.]+$">
+                                <label for="email">Email: </label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="telefone" type="text" class="validate" name="telefone" required>
+                                <label for="telefone">Telefone: </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <textarea id="mensagem" class="materialize-textarea validate" name="mensagens"
+                                    required></textarea>
+                                <label>Mensagem: </label>
+                            </div>
+                        </div>
+
+                        <button class="btn" type="submit" name="submit" id="btn-enviar"> ENVIAR
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </form>
+                    <!--FIM DO FORMULARIO-->
+                </div>
+            </section>
+        </div>
+        <p id="textContato">Clique no link <a href="mural.html">Aqui</a> para conferir todos os depoimentos de pessoas
+            que utilizaram das
+            dicas do site. </p>
+    </main>
+    <!--RODAPÉ DA PÁGINA-->
+    <footer class="page-footer navbarColor">
+        <div class="container indigo-text text-darken-4">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h6 class="indigo-text text-darken-4">Viva Bem - Nutrição</h6>
+                    <p class="indigo-text text-darken-4 contato">Entre em contato para mais informações</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <a href="contato.html">
+                        <h5 class="indigo-text text-darken-4">Entre em contato</h5>
+                    </a>
+                    <address>
+                        <p class="contato">Telefone (42) 3216 - 5498</p>
+                        <p class="contato"> Endereço: Av. Profa. Laura Pacheco Bastos, 800 - Industrial, Guarapuava -
+                            PR, 85053-525</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container indigo-text text-darken-4">
+                © 2019 Desenvolvimento em Web 2
+                <a class="indigo-text text-darken-4 right" href="http://portal.utfpr.edu.br/">UTFPR</a>
+            </div>
+        </div>
+    </footer>
+    <!--ARQUIVOS JS-->
+    <script src="assets/resources/js/inicio.js"></script>
+    <script src="assets/resources/js/novoValidar.js"></script>
+    <script src="assets/resources/js/index.js"></script>
+</body>
+
+</html>

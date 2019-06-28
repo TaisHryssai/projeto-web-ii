@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title> VIVA BEM - NUTRIÇÃO</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
+    <link rel="stylesheet" href="assets/resources/css/estilo.css">
+    <link rel="shortcut icon" href="assets/resources/img/iconSaude.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="assets/libraries/jquery/jquery.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+
+</head>
+
+<body onload="dicas()">
+    <!--Navbar-->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="mitos-verdades.html">Mitos & Verdades</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+
+    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper navbarColor">
+                <a href="home.html" class="brand-logo">VIVA BEM</a>
+                <a href="home.html" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger" href="guia-nutricional.html" data-target="dropdown1">Guia
+                            Nutricional<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="diversos.html" data-target="dropdown2">Diversos<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="contato.html" data-target="dropdown3">Contato<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="guia-nutricional.html">Guia Nutricional</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="calculos.html">Cálculos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="piramide.html">Pirâmide Alimentar</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="dicas.html">Dicas Nutricionais</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="diversos.html">Diversos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mitos-verdades.html">Mitos & verdades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="curiosidade.html">Curiosidades</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="mural.html">Depoimentos</a></li>
+        <li class="divider" tabindex="-1"></li>
+
+    </ul>
+    <!--Fim Navbar-->
+    <main>
+        <!--inicio seção-->
+        <section>
+            <h3>Dicas Nutricionais</h3>
+            <p>Alimentar-se é um ato natural e vital ao ser humano. Alimentação é um processo de ingestão de alimentos
+                capazes de fornecer ao nosso organismo nutrientes para o seu desenvolvimento. Alimentação saudável é
+                capaz
+                de influenciar positivamente na saúde e qualidade de vida das pessoas. Além de fornecer saúde, boa
+                energia e
+                bem-estar geral, ela também nos ajuda a combater doenças, manter o peso corporal saudável e um bom
+                desenvolvimento físico.
+            </p>
+            <p> Ter uma alimentação saudável é fundamental para que as funções do organismo funcionem de foma
+                equilibrada.
+                De forma prática, uma alimentação saudável é aquela composta por todos os macro e micronutrientes. Ter
+                uma
+                alimentação saudável proporciona uma série de benefícios para as pessoas. Ela contribui para a melhora
+                no
+                sistema imunológico, na qualidade de sono, no trânsito intestinal, no humor, na capacidade de
+                concentração e
+                pode contribuir até mesmo para a perda de peso. Em gestantes, ela é essencial para o bom desenvolvimento
+                do
+                feto e em mulheres que amamentam irá contribuir para o desenvolvimento saudável do bebê. Entre outros
+                inúmeros benefícios.</p>
+        </section>
+        <!--fim seção-->
+
+        <!--inicio seção-->
+        <section>
+            <h2>Dicas: </h2>
+            <table id="txtDicas">
+                <tr>
+                    <th> <i class="material-icons">local_dining</i>Alimentos</th>
+                    <th> <i class="material-icons">local_cafe</i> Bebidas</th>
+                    <th> <i class="material-icons"> fitness_center</i> Exercicios</th>
+                </tr>
+                <tr>
+                    <td>Verduras Verde Escuras: Consuma verdura escuras como, brócolis, couve, espinafre, pois contém
+                        bioflavonoides, substâncias que interferem no metabolismo das gorduras. Além de serem ricas em
+                        ferro. </td>
+                    <td>O chá verde é muito procurado por quem faz dietas de emagrecimento, já que tem efeito
+                        termogênico e
+                        pode promover a diminuição da gordura corporal, mas seus benefícios vão além disso. </td>
+                    <td> A prática regular de exercícios afasta as chances de o indivíduo desenvolver doenças
+                        cardiovasculares como hipertensão arterial, acidente vascular cerebral (AVCs) </td>
+                </tr>
+                <tr>
+                    <td>Cebola: A cebola é antimicrobiana. Quando crua é mais saudável, mas cozida não perde seu valor
+                        nutricional. Rica em potássio, também ajuda a elevar o colesterol “bom”, o HDL, protegendo a
+                        saúde
+                        do coração e do sistema cardiovascular. </td>
+                    <td> Alimentos que podem apresentar consumo livre: Chá ou café (com adoçante), água de coco,
+                        refrigerante diet/light, limonada (com adoçante), gelatina diet/light, suco de melão ou melancia
+                        (sem açúcar) e hortaliças. </td>
+                    <td> A natação regular pode reduzir o risco de doenças crônicas, como doenças cardíacas, diabetes
+                        tipo 2
+                        e acidente vascular cerebral, além de melhorar o seu humor e manter o peso sob controle. </td>
+                </tr>
+                <tr>
+                    <td>A mandioca possui carboidratos, tendo alto valor energético e não contém proteínas. Ela é rica
+                        em
+                        sais minerais, como o cálcio, ferro e fósforo. Além de possuir vitaminas do complexo B e grandes
+                        quantidades de potássio.</td>
+                    <td> O consumo de café conduz a um aumento dos antioxidantes no corpo. Quando os antioxidantes estão
+                        presentes na corrente sanguínea, tendem a fortalecer o sistema imunológico e combater as
+                        doenças.
+                    </td>
+                    <td>Pedalar é um exercício que acelera o metabolismo, ou seja, a queima de calorias em seu corpo
+                        será
+                        mais rápida. Isso evita o acúmulo de gordura no organismo. </td>
+                </tr>
+                <tr>
+                    <td>As frutas são alimentos que oferecem grande quantidade de fibras, proteínas, vitaminas, sais
+                        minerais e açúcares (frutose). Elas são compostas basicamente de água (composto fundamental para
+                        manter os tecidos do organismo saudáveis).</td>
+                    <td> A água de coco é um alimento muito completo devido aos seus altos níveis de potássio. Este
+                        mineral
+                        contribui para que a hidratação seja muito mais potente. </td>
+                    <td>O pilates fortalece os músculos fracos, alonga os músculos que estão encurtados e aumenta a
+                        mobilidade das articulações.</td>
+                </tr>
+            </table>
+        </section>
+        <!--fim seção-->
+
+        <!--inicio seção-->
+        <section>
+            <h5>COMO MELHORAR: </h5>
+            <p>A melhor maneira de controlar o peso é a combinação de boa alimentação com exercícios físicos e não
+                apenas um
+                ou outro. O ideal é fazer um pouco de atividade física todos os dias, ou pelo menos três vezes por
+                semana.
+            </p>
+            <p>Os benefícios da atividade física como melhorar a circulação sanguínea, fortalecer o sistema imune e
+                ajudar a
+                emagrecer, podem ser alcançados em cerca de 1 mês após o início da atividade física regular.</p>
+            <p>Outros benefícios da atividade física como aumento do metabolismo, diminuição do risco de doenças
+                cardíacas,
+                fortalecimento dos ossos podem ser alcançados quando o indivíduo faz alguma atividade física que tenha
+                impacto como caminhadas, pular corda, correr ou dançar, por exemplo. A dança ainda melhora a coordenação
+                dos
+                movimentos e o equilíbrio, aumentando a boa disposição e o humor, melhorando a imagem corporal e a auto
+                estima.</p>
+        </section>
+        <!--fim seção-->
+    </main>
+
+    <footer class="page-footer navbarColor">
+        <div class="container indigo-text text-darken-4">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h6 class="indigo-text text-darken-4">Viva Bem - Nutrição</h6>
+                    <p class="indigo-text text-darken-4 contato">Entre em contato para mais informações</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <a href="contato.html">
+                        <h5 class="indigo-text text-darken-4">Entre em contato</h5>
+                    </a>
+                    <address>
+                        <p class="contato">Telefone (42) 3216 - 5498</p>
+                        <p class="contato"> Endereço: Av. Profa. Laura Pacheco Bastos, 800 - Industrial, Guarapuava -
+                            PR, 85053-525</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container indigo-text text-darken-4">
+                © 2019 Desenvolvimento em Web 2
+                <a class="indigo-text text-darken-4 right" href="http://portal.utfpr.edu.br/">UTFPR</a>
+            </div>
+        </div>
+    </footer>
+    <!--arquivos js-->
+    <script src="assets/resources/js/dicasReceitas.js"></script>
+    <script src="assets/resources/js/inicio.js"></script>
+</body>
+
+</html>
