@@ -82,3 +82,5 @@
 - [x] LocalStorage ou SessionStorage
 - [ ] Leitura e escrita de dados simples
 - [x] Leitura e escrita de JSON
+
+Projeto hospepado: https://taishryssai.github.io/projeto-web-ii/
