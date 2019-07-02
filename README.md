@@ -3,7 +3,7 @@
 - [ ] Usar um Style Guide - apresentar o uso de pelo menos 10 regras do style escolhido (sugerido AirBnb)
 - [ ] Usar um lint - mostrar a correção de pelo menos 5 problemas informados pelo lint
 - [x] Usar strict mode
-- [x] Usar Module Pattern
+- [ ] Usar Module Pattern
 - [x] Usar pasta assets e subpastas resources e libraries para organizar o código
 - [x] Usar let ao invés de var
 - [x] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
@@ -82,3 +82,5 @@
 - [x] LocalStorage ou SessionStorage
 - [ ] Leitura e escrita de dados simples
 - [x] Leitura e escrita de JSON
+
+Projeto hospepado: https://taishryssai.github.io/projeto-web-ii/
