@@ -1,8 +1,8 @@
-var express = require('express');
-var app = express();
+let express = require('express');
+let app = express();
 let port = 3000;
-var bodyParser = require('body-parser');
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
+let bodyParser = require('body-parser');
+let urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.use(express.static('public'));
 
@@ -61,10 +61,10 @@ app.get('/error', (req, res) => {
    res.status(500).send("erro!!!");
 })
 
-var server = app.listen(port, function () {
+let server = app.listen(port, function () {
    'use strict';
-   var host = server.address().address;
-   var port = server.address().port;
+   let host = server.address().address;
+   let port = server.address().port;
    
    console.log(`Porta http://localhost:${port}`,host)
 })

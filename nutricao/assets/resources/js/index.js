@@ -9,7 +9,7 @@ function enviarDados(){
     let parametros = {
         nome: "Enviado com sucesso"
     }
-    var servico = "http://localhost:3000/process_post";
+    let servico = "http://localhost:3000/process_post";
     $.post(servico, parametros, function (data) {
         'use strict';
         console.log(data);
