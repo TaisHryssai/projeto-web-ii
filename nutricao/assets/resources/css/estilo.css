@@ -2,6 +2,15 @@ main {
     padding: 0 2% 5%;
 }
 
+.texto{
+    text-align: center;
+}
+#alinhar{
+    text-align: center;
+    padding: 5%;
+    padding-left: 30%;
+}
+
 .navbarColor {
     background-color: #80cbc4;
 }
